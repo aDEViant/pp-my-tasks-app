@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyTasks</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Hello There! -->
+      <header>
+        <nav>
+          <h1 class="logoText">MyTasks</h1>
+          <ul class="navLinks">
+            <li><a href="">Profile</a></li>
+            <li><a href="">Settings</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="mainSection">
+          <p class="mainSectionMessage">Let's add some tasks!</p>
+
+          <form id="tasksForm">
+            <label for="user_input" class="sr-only">Add your tasks here</label>
+
+            <input
+              type="text"
+              name="user_input"
+              id="user_input"
+              placeholder="Add your tasks here"
+            />
+
+            <button class="btn" id="addTaskButton">Add</button>
+          </form>
+
+          <div class="filterSection">
+            <p class="filterSectionTitle">Want to search something?</p>
+
+            <label for="user_filter" class="sr-only">Search Tasks</label>
+
+            <input
+              type="text"
+              name="user_filter"
+              id="user_filter"
+              placeholder="Search Tasks"
+            />
+          </div>
+
+          <div class="listSectionProperties">
+            <p class="tasksListTitle">Your Tasks Here</p>
+
+            <div class="tasksCounter">
+              Total Tasks - <span class="counterNumber">3</span>
+            </div>
+          </div>
+
+          <ul class="taskListItems">
+            <li class="item">
+              <span class="taskText">Milk</span>
+
+              <div class="listItemButtonGroups">
+                <button class="formButton" id="tickMark">&#10003</button>
+                <button class="formButton" id="deleteMark">X</button>
+              </div>
+            </li>
+          </ul>
+
+          <button class="btn" id="clearAllButton">Clear all</button>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

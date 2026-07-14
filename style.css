@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.container {
+  height: 100%;
+  padding: 1rem;
+}
+
+nav > h1 {
+  font-size: 1.4rem;
+}
+
+.navLinks {
+  margin-top: 0.5rem;
+  line-height: 2;
+  list-style-type: none;
+}
+
+.navLinks a {
+  text-decoration: none;
+}
+
+.mainSection {
+  margin-top: 2rem;
+  height: 100%;
+}
+
+.mainSectionMessage {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form > input {
+  margin-top: 0.1rem;
+  height: 2.5rem;
+  width: 100%;
+  padding: 0rem 1rem;
+}
+
+.btn {
+  width: auto;
+  margin: 1rem auto;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  display: flex;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+#clearAllButton {
+  background: red;
+  color: white;
+  border: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0px;
+  margin: -1px;
+  overflow: hidden;
+  border: 0px;
+  clip-path: circle(0);
+}
+
+.filterSection > input {
+  margin-top: 0.1rem;
+  height: 2.5rem;
+  width: 100%;
+  padding: 0rem 1rem;
+}
+
+.filterSectionTitle {
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.listSectionProperties {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tasksListTitle {
+  font-style: italic;
+}
+
+.tasksCounter {
+  border: 2px solid gainsboro;
+  padding: 0.5rem;
+  width: auto;
+}
+
+.taskListItems {
+  margin-top: 0.2rem;
+  min-height: 10rem;
+}
+
+.taskListItems > li {
+  padding: 0.1rem;
+  list-style-type: none;
+  font-size: 1.2rem;
+  padding: 0rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item {
+  border: 2px solid grey;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  height: 12%;
+  margin-bottom: 0.5rem;
+}
+
+.formButton {
+  height: 2rem;
+  width: 2rem;
+}

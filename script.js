@@ -6,21 +6,28 @@ const buttonGroups = document.querySelector(".listItemButtonGroups");
 const clearButton = document.querySelector("#clearAllButton");
 const taskList = document.querySelector(".taskListItems");
 
+const tasks = [];
+
+function render() {
+  taskList.innerHTML = "";
+  tasks.forEach((task) => {
+    const li = document.createElement("li");
+    li.textContent = task;
+    taskList.appendChild(li);
+  });
+}
+
 function addTask() {
   const taskText = userInput.value.trim();
 
   if (taskText === "") {
     alert("Please add something.");
+    return;
   } else {
-    createTaskItem(taskText);
+    tasks.push(taskText);
     userInput.value = "";
+    render();
   }
-}
-
-function createTaskItem(taskText) {
-  const li = document.createElement("li");
-  li.textContent = taskText;
-  taskList.appendChild(li);
 }
 
 form.addEventListener("submit", (e) => {

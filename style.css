@@ -142,3 +142,94 @@ form > input {
 
 /* Media Queries  */
 /* For Tablets (600px and above) */
+
+@media (min-width: 600px) {
+  .container {
+    padding: 2rem;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  form {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  form > input {
+    flex: 1;
+  }
+
+  .btn {
+    width: auto;
+    padding: 0 1.5rem;
+    height: 2.75rem;
+  }
+
+  .filterSection > input {
+    height: 2.75rem;
+  }
+
+  .taskListItems > li {
+    font-size: 1.1rem;
+    padding: 0.5rem 1.25rem;
+  }
+
+  .formButton {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+/* For Desktop (1024px and above) */
+@media (min-width: 1024px) {
+  .container {
+    /* border: 2px solid aqua; */
+
+    max-width: 750px;
+    padding: 2.5rem;
+  }
+
+  nav > h1 {
+    font-size: 1.8rem;
+  }
+
+  nav > a {
+    font-size: 1.1rem;
+  }
+
+  .mainSectionMessage {
+    font-size: 1.3rem;
+  }
+
+  form > input {
+    /* border: 2px solid aqua; */
+    height: 3rem;
+  }
+
+  .btn {
+    height: 3rem;
+    font-size: 1.1rem;
+    padding: 0 2rem;
+  }
+
+  .filterSection > input {
+    height: 3rem;
+    font-size: 1.1rem;
+  }
+
+  .taskListItems > li {
+    font-size: 1.3rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .formButton {
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.2rem;
+  }
+
+  .taskCounter {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}

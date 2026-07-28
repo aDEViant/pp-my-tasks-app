@@ -130,7 +130,15 @@ form > input {
   margin-bottom: 0.5rem;
 }
 
+.item.completed .taskText {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
 .formButton {
   height: 2rem;
   width: 2rem;
 }
+
+/* Media Queries  */
+/* For Tablets (600px and above) */
